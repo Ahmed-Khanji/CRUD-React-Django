@@ -66,10 +66,12 @@ export default function App() {
       </div>
 
       <ul>
-        {books.map((book, index) => (
-          <li key={index}>
-            {book.bookTitle} ({book.release_year})
-          </li>
+        {books.map((book) => (
+          <div>
+            <p>{book.bookTitle} ({book.release_year}) <button className="delete">Delete</button></p>
+            <input type="text" placeholder="New Title..." />
+            <button>Change Title</button>
+          </div>
         ))}
       </ul>
     </>
