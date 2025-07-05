@@ -5,7 +5,6 @@ export default function App() {
   const [books, setBooks] = useState([]);
   const [title, setTitle] = useState("");
   const [releaseYear, setReleaseYear] = useState(0);
-  let x;
 
   const fetchBooks = async () => {
     try {
